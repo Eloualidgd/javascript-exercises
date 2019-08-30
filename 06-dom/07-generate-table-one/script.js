@@ -11,6 +11,43 @@
 
 (function() {
 
-    // your code here
+    var target = document.getElementById("target");
+    var table = document.createElement("table");
+    var tbody = document.createElement("tbody");
+
+    console.log(target);
+    for (var i = 0; i<10 ; i++){
+        var trr = document.createElement("tr");
+        tbody.appendChild(trr);
+        for (var j = 0; j<1 ; j++){
+            var tdd = document.createElement("td");
+            trr.appendChild(tdd);
+        }
+    }
+
+    table.appendChild(tbody);
+    target.appendChild(table);
 
 })();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

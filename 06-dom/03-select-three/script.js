@@ -9,8 +9,29 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
 
-    // your code here
+    let x = document.getElementsByClassName("material")[0];
+    console.log(x);
+    x.getElementsByClassName("target")[0].innerHTML = "owned";
+    x.getElementsByClassName("target")[1].innerHTML = "owned";
+    x.getElementsByClassName("target")[2].innerHTML = "owned";
+    x.getElementsByClassName("target")[3].innerHTML = "owned";
+    x.getElementsByClassName("target")[4].innerHTML = "owned";
 
 })();
+
+/*(function () {
+
+
+})
+var newword = document.querySelectorAll(".material .target");
+console.log(newword);
+ from array "newword" slecet each one then place "owner"
+Array.from(newword).forEach(function (intarget) {
+  intarget.innerHTML = "owned";
+
+})();
+*/
+
+

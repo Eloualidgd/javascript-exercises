@@ -11,6 +11,13 @@
 
 (function() {
 
-    // your code here
-
+    // we need to take date of img
+    let getId = document.getElementById("source");
+    let getAttr = getId.getAttribute("data-image");
+    // console.log(getAttr);
+let newImg = document.createElement("img");
+     newImg.setAttribute("src",getAttr );
+     console.log(newImg);
+   document.getElementById("target").appendChild(newImg);
+   getId.remove();
 })();

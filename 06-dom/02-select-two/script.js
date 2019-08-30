@@ -11,6 +11,9 @@
 
 (function() {
 
-    // your code here
+     document.querySelector("#target").innerHTML = "owned";
+
+
 
 })();
+// no puedes utilizar getElementById por eso utilizo querySelector

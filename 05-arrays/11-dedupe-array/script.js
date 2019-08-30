@@ -28,6 +28,15 @@
         "cerise",
     ];
 
-    // your code here
+document.getElementById("run").addEventListener("click",function () {
+
+    let fru = [ ...new Set(fruits)];
+    console.log(fru);
+
+
+
+})
 
 })();
+
+// objetivo es que no se repitan los nombres que estan en la lista
